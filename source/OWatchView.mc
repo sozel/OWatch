@@ -1,4 +1,4 @@
-import Toybox.Graphics;
+    import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
@@ -39,11 +39,12 @@ class OWatchView extends WatchUi.WatchFace {
                 today.month.format("%02d")
             ]
         );
-
         dateLabel.setText(dateString);
 
+        var sysStats = System.getSystemStats();
+
         var batteryLabel = View.findDrawableById("BatteryLabel") as Text;
-        batteryLabel.setText("10%");
+        batteryLabel.setText(Lang.format( "$1$%", [sysStats.battery.format( "%2d" )]));
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
