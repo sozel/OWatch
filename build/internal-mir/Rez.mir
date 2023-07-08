@@ -1,0 +1,200 @@
+[ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 12; ]
+    module Fonts {
+        [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+    }
+    [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 15; ]
+    module JsonData {
+        [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 15; ]
+        <init> {
+        }
+    }
+    [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 18; ]
+    module Layouts {
+        [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 18; ]
+        <init> {
+        }
+        [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 19; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_sno_dev_garmin_OWatch_build_gen_006_B3113_00_source_Rez_mcgen_19_73_start:
+[ "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" 20 12 ]
+            [ "_Users_sno_dev_garmin_OWatch_build_gen_006_B3113_00_source_Rez_mcgen_19_73_start" "_Users_sno_dev_garmin_OWatch_build_gen_006_B3113_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_DateLabel.1 = local;
+            %tmp.3 = getm $.Toybox.WatchUi;
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 6;
+            %tmp.7 = const :identifier;
+            %tmp.8 = "DateLabel";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :color;
+            %tmp.13 = getm $.Toybox.Graphics;
+            %tmp.14 = getv %tmp.13 :COLOR_WHITE;
+            %tmp.15 = dup %tmp.10;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            %tmp.18 = const :locX;
+            %tmp.19 = 240;
+            %tmp.20 = 0.5;
+            %tmp.21 = mul %tmp.19 %tmp.20;
+            %tmp.22 = dup %tmp.16;
+            %tmp.23 = aputv %tmp.22 %tmp.18 %tmp.21;
+            %tmp.25 = const :locY;
+            %tmp.26 = getm $.Toybox.WatchUi;
+            %tmp.27 = getv %tmp.26 :LAYOUT_VALIGN_TOP;
+            %tmp.28 = dup %tmp.23;
+            %tmp.29 = aputv %tmp.28 %tmp.25 %tmp.27;
+            %tmp.31 = const :justification;
+            %tmp.32 = getm $.Toybox.Graphics;
+            %tmp.33 = getv %tmp.32 :TEXT_JUSTIFY_CENTER;
+            %tmp.34 = dup %tmp.29;
+            %tmp.35 = aputv %tmp.34 %tmp.31 %tmp.33;
+            %tmp.37 = const :font;
+            %tmp.38 = getm $.Toybox.Graphics;
+            %tmp.39 = getv %tmp.38 :FONT_LARGE;
+            %tmp.40 = dup %tmp.35;
+            %tmp.41 = aputv %tmp.40 %tmp.37 %tmp.39;
+            %tmp.1 = newc %tmp.4 (%tmp.41);
+            lputv %rez_cmp_local_text_DateLabel.1 %tmp.1;
+[ "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" 22 12 ]
+            [ "_Users_sno_dev_garmin_OWatch_build_gen_006_B3113_00_source_Rez_mcgen_19_73_start" "_Users_sno_dev_garmin_OWatch_build_gen_006_B3113_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_TimeLabel.2 = local;
+            %tmp.44 = getm $.Toybox.WatchUi;
+            %tmp.45 = getv function ? %tmp.44 :Text;
+            %tmp.46 = newd 6;
+            %tmp.48 = const :identifier;
+            %tmp.49 = "TimeLabel";
+            %tmp.50 = dup %tmp.46;
+            %tmp.51 = aputv %tmp.50 %tmp.48 %tmp.49;
+            %tmp.53 = const :color;
+            %tmp.54 = getm $.Toybox.Graphics;
+            %tmp.55 = getv %tmp.54 :COLOR_WHITE;
+            %tmp.56 = dup %tmp.51;
+            %tmp.57 = aputv %tmp.56 %tmp.53 %tmp.55;
+            %tmp.59 = const :locX;
+            %tmp.60 = 240;
+            %tmp.61 = 0.5;
+            %tmp.62 = mul %tmp.60 %tmp.61;
+            %tmp.63 = dup %tmp.57;
+            %tmp.64 = aputv %tmp.63 %tmp.59 %tmp.62;
+            %tmp.66 = const :locY;
+            %tmp.67 = 240;
+            %tmp.68 = lgetv %dc;
+            %tmp.69 = getv function %tmp.68 :getFontHeight;
+            %tmp.70 = getm $.Toybox.Graphics;
+            %tmp.71 = getv %tmp.70 :FONT_NUMBER_THAI_HOT;
+            %tmp.72 = invoke %tmp.68 %tmp.69(%tmp.71);
+            %tmp.73 = sub %tmp.67 %tmp.72;
+            %tmp.74 = 0.5;
+            %tmp.75 = mul %tmp.73 %tmp.74;
+            %tmp.76 = dup %tmp.64;
+            %tmp.77 = aputv %tmp.76 %tmp.66 %tmp.75;
+            %tmp.79 = const :justification;
+            %tmp.80 = getm $.Toybox.Graphics;
+            %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_CENTER;
+            %tmp.82 = dup %tmp.77;
+            %tmp.83 = aputv %tmp.82 %tmp.79 %tmp.81;
+            %tmp.85 = const :font;
+            %tmp.86 = getm $.Toybox.Graphics;
+            %tmp.87 = getv %tmp.86 :FONT_NUMBER_THAI_HOT;
+            %tmp.88 = dup %tmp.83;
+            %tmp.89 = aputv %tmp.88 %tmp.85 %tmp.87;
+            %tmp.42 = newc %tmp.45 (%tmp.89);
+            lputv %rez_cmp_local_text_TimeLabel.2 %tmp.42;
+[ "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" 24 12 ]
+            [ "_Users_sno_dev_garmin_OWatch_build_gen_006_B3113_00_source_Rez_mcgen_19_73_start" "_Users_sno_dev_garmin_OWatch_build_gen_006_B3113_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_BatteryLabel.3 = local;
+            %tmp.92 = getm $.Toybox.WatchUi;
+            %tmp.93 = getv function ? %tmp.92 :Text;
+            %tmp.94 = newd 6;
+            %tmp.96 = const :identifier;
+            %tmp.97 = "BatteryLabel";
+            %tmp.98 = dup %tmp.94;
+            %tmp.99 = aputv %tmp.98 %tmp.96 %tmp.97;
+            %tmp.101 = const :color;
+            %tmp.102 = getm $.Toybox.Graphics;
+            %tmp.103 = getv %tmp.102 :COLOR_WHITE;
+            %tmp.104 = dup %tmp.99;
+            %tmp.105 = aputv %tmp.104 %tmp.101 %tmp.103;
+            %tmp.107 = const :locX;
+            %tmp.108 = 240;
+            %tmp.109 = 0.5;
+            %tmp.110 = mul %tmp.108 %tmp.109;
+            %tmp.111 = dup %tmp.105;
+            %tmp.112 = aputv %tmp.111 %tmp.107 %tmp.110;
+            %tmp.114 = const :locY;
+            %tmp.115 = 240;
+            %tmp.116 = 82;
+            %tmp.117 = 100.0;
+            %tmp.118 = div %tmp.116 %tmp.117;
+            %tmp.119 = mul %tmp.115 %tmp.118;
+            %tmp.120 = dup %tmp.112;
+            %tmp.121 = aputv %tmp.120 %tmp.114 %tmp.119;
+            %tmp.123 = const :justification;
+            %tmp.124 = getm $.Toybox.Graphics;
+            %tmp.125 = getv %tmp.124 :TEXT_JUSTIFY_CENTER;
+            %tmp.126 = dup %tmp.121;
+            %tmp.127 = aputv %tmp.126 %tmp.123 %tmp.125;
+            %tmp.129 = const :font;
+            %tmp.130 = getm $.Toybox.Graphics;
+            %tmp.131 = getv %tmp.130 :FONT_LARGE;
+            %tmp.132 = dup %tmp.127;
+            %tmp.133 = aputv %tmp.132 %tmp.129 %tmp.131;
+            %tmp.90 = newc %tmp.93 (%tmp.133);
+            lputv %rez_cmp_local_text_BatteryLabel.3 %tmp.90;
+[ "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" 26 12 ]
+            %tmp.134 = newa Array<WatchUi.Drawable> 3;
+            %tmp.136 = lgetv %rez_cmp_local_text_DateLabel.1;
+            %tmp.137 = dup %tmp.134;
+            %tmp.138 = aputv %tmp.137 0 %tmp.136;
+            %tmp.140 = lgetv %rez_cmp_local_text_TimeLabel.2;
+            %tmp.141 = dup %tmp.138;
+            %tmp.142 = aputv %tmp.141 1 %tmp.140;
+            %tmp.144 = lgetv %rez_cmp_local_text_BatteryLabel.3;
+            %tmp.145 = dup %tmp.142;
+            %tmp.146 = aputv %tmp.145 2 %tmp.144;
+            ret %tmp.146;
+_Users_sno_dev_garmin_OWatch_build_gen_006_B3113_00_source_Rez_mcgen_19_73_stop:
+        }
+    }
+    [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 30; ]
+    module Menus {
+        [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 30; ]
+        <init> {
+        }
+    }
+    [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 33; ]
+    module Strings {
+        [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 33; ]
+        <init> {
+        }
+        [ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 34; @position = 27; initialized = true; ]
+        var AppName as Symbol;
+    }
+}
+[ @file = "/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
