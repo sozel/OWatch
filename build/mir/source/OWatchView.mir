@@ -118,14 +118,14 @@ _Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start:
         %tmp.46 = "$1$/$2$";
         %tmp.47 = newa 2;
         %tmp.48 = lgetv %today.5;
-        %tmp.49 = getv %tmp.48 :day;
+        %tmp.49 = getv %tmp.48 :month;
         %tmp.50 = getv function %tmp.49 :format;
         %tmp.51 = "%02d";
         %tmp.52 = invoke %tmp.49 %tmp.50(%tmp.51);
         %tmp.53 = dup %tmp.47;
         %tmp.54 = aputv %tmp.53 0 %tmp.52;
         %tmp.55 = lgetv %today.5;
-        %tmp.56 = getv %tmp.55 :month;
+        %tmp.56 = getv %tmp.55 :day;
         %tmp.57 = getv function %tmp.56 :format;
         %tmp.58 = "%02d";
         %tmp.59 = invoke %tmp.56 %tmp.57(%tmp.58);

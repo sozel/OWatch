@@ -35,8 +35,8 @@ class OWatchView extends WatchUi.WatchFace {
         var dateString = Lang.format(
             "$1$/$2$",
             [
-                today.day.format("%02d"),
-                today.month.format("%02d")
+                today.month.format("%02d"),
+                today.day.format("%02d")
             ]
         );
         dateLabel.setText(dateString);
