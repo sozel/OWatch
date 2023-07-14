@@ -11,42 +11,45 @@
 <entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchApp.mc" id="6" lineNum="7" parent="globals/OWatchApp" pc="268435569" symbol="initialize"/>
 <entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchApp.mc" id="6" lineNum="8" parent="globals/OWatchApp" pc="268435571" symbol="initialize"/>
 <entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="8" lineNum="8" parent="globals/OWatchView" pc="268435590" symbol="&lt;init&gt;"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="11" lineNum="15" parent="globals/OWatchView" pc="268435609" symbol="onLayout"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="11" lineNum="16" parent="globals/OWatchView" pc="268435611" symbol="onLayout"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="13" lineNum="10" parent="globals/OWatchView" pc="268435653" symbol="initialize"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="13" lineNum="11" parent="globals/OWatchView" pc="268435655" symbol="initialize"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="26" parent="globals/OWatchView" pc="268435674" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="28" parent="globals/OWatchView" pc="268435678" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="29" parent="globals/OWatchView" pc="268435695" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="30" parent="globals/OWatchView" pc="268435769" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="31" parent="globals/OWatchView" pc="268435797" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="33" parent="globals/OWatchView" pc="268435811" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="34" parent="globals/OWatchView" pc="268435839" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="35" parent="globals/OWatchView" pc="268435876" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="42" parent="globals/OWatchView" pc="268435964" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="44" parent="globals/OWatchView" pc="268435978" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="46" parent="globals/OWatchView" pc="268435995" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="47" parent="globals/OWatchView" pc="268436023" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="50" parent="globals/OWatchView" pc="268436091" symbol="onUpdate"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="16" lineNum="11" parent="globals/Rez/Drawables/HorizontalLines" pc="268436116" symbol="&lt;init&gt;"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="17" lineNum="13" parent="globals/Rez/Drawables/HorizontalLines" pc="268436135" symbol="initialize"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="17" lineNum="14" parent="globals/Rez/Drawables/HorizontalLines" pc="268436137" symbol="initialize"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="17" parent="globals/Rez/Drawables/HorizontalLines" pc="268436162" symbol="draw"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="18" parent="globals/Rez/Drawables/HorizontalLines" pc="268436164" symbol="draw"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="19" parent="globals/Rez/Drawables/HorizontalLines" pc="268436175" symbol="draw"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="20" parent="globals/Rez/Drawables/HorizontalLines" pc="268436187" symbol="draw"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="25" parent="globals/Rez/Drawables/HorizontalLines" pc="268436188" symbol="draw"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="26" parent="globals/Rez/Drawables/HorizontalLines" pc="268436210" symbol="draw"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="27" parent="globals/Rez/Drawables/HorizontalLines" pc="268436242" symbol="draw"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="28" parent="globals/Rez/Drawables/HorizontalLines" pc="268436264" symbol="draw"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="40" parent="globals/Rez/Layouts" pc="268436297" symbol="WatchFace"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="41" parent="globals/Rez/Layouts" pc="268436309" symbol="WatchFace"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="42" parent="globals/Rez/Layouts" pc="268436349" symbol="WatchFace"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="43" parent="globals/Rez/Layouts" pc="268436362" symbol="WatchFace"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="46" parent="globals/Rez/Layouts" pc="268436375" symbol="WatchFace"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="48" parent="globals/Rez/Layouts" pc="268436487" symbol="WatchFace"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="50" parent="globals/Rez/Layouts" pc="268436622" symbol="WatchFace"/>
-<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="52" parent="globals/Rez/Layouts" pc="268436734" symbol="WatchFace"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="11" lineNum="19" parent="globals/OWatchView" pc="268435609" symbol="onLayout"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="11" lineNum="20" parent="globals/OWatchView" pc="268435611" symbol="onLayout"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="13" lineNum="14" parent="globals/OWatchView" pc="268435653" symbol="initialize"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="13" lineNum="15" parent="globals/OWatchView" pc="268435655" symbol="initialize"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="30" parent="globals/OWatchView" pc="268435674" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="31" parent="globals/OWatchView" pc="268435678" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="32" parent="globals/OWatchView" pc="268435706" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="33" parent="globals/OWatchView" pc="268435734" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="35" parent="globals/OWatchView" pc="268435762" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="36" parent="globals/OWatchView" pc="268435779" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="39" parent="globals/OWatchView" pc="268435803" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="41" parent="globals/OWatchView" pc="268435856" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="48" parent="globals/OWatchView" pc="268435950" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="52" parent="globals/OWatchView" pc="268435970" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="53" parent="globals/OWatchView" pc="268436044" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="57" parent="globals/OWatchView" pc="268436058" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="59" parent="globals/OWatchView" pc="268436087" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="60" parent="globals/OWatchView" pc="268436104" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="61" parent="globals/OWatchView" pc="268436172" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" id="15" lineNum="65" parent="globals/OWatchView" pc="268436191" symbol="onUpdate"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="16" lineNum="11" parent="globals/Rez/Drawables/HorizontalLines" pc="268436216" symbol="&lt;init&gt;"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="17" lineNum="13" parent="globals/Rez/Drawables/HorizontalLines" pc="268436235" symbol="initialize"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="17" lineNum="14" parent="globals/Rez/Drawables/HorizontalLines" pc="268436237" symbol="initialize"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="17" parent="globals/Rez/Drawables/HorizontalLines" pc="268436262" symbol="draw"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="18" parent="globals/Rez/Drawables/HorizontalLines" pc="268436264" symbol="draw"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="19" parent="globals/Rez/Drawables/HorizontalLines" pc="268436275" symbol="draw"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="20" parent="globals/Rez/Drawables/HorizontalLines" pc="268436287" symbol="draw"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="25" parent="globals/Rez/Drawables/HorizontalLines" pc="268436288" symbol="draw"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="26" parent="globals/Rez/Drawables/HorizontalLines" pc="268436310" symbol="draw"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="27" parent="globals/Rez/Drawables/HorizontalLines" pc="268436342" symbol="draw"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="18" lineNum="28" parent="globals/Rez/Drawables/HorizontalLines" pc="268436364" symbol="draw"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="40" parent="globals/Rez/Layouts" pc="268436397" symbol="WatchFace"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="41" parent="globals/Rez/Layouts" pc="268436409" symbol="WatchFace"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="42" parent="globals/Rez/Layouts" pc="268436449" symbol="WatchFace"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="43" parent="globals/Rez/Layouts" pc="268436462" symbol="WatchFace"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="46" parent="globals/Rez/Layouts" pc="268436475" symbol="WatchFace"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="48" parent="globals/Rez/Layouts" pc="268436587" symbol="WatchFace"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="50" parent="globals/Rez/Layouts" pc="268436722" symbol="WatchFace"/>
+<entry filename="/Users/sno/dev/garmin/OWatch/build/gen/006-B3113-00/source/Rez.mcgen" id="19" lineNum="52" parent="globals/Rez/Layouts" pc="268436834" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -55,7 +58,8 @@
 <entry id="8388924" module="true" symbol="Gregorian"/>
 <entry id="10" object="true" symbol="OWatchView"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry field="true" id="15" symbol="AppName"/>
+<entry field="true" id="14" symbol="lastTimeBatteryChecked"/>
+<entry field="true" id="17" symbol="AppName"/>
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
@@ -74,7 +78,7 @@
 <entry id="8389376" method="true" symbol="onEnterSleep"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="8389349" symbol="justification"/>
-<entry id="13" object="true" symbol="HorizontalLines"/>
+<entry id="15" object="true" symbol="HorizontalLines"/>
 <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
 <entry id="8389377" method="true" symbol="onExitSleep"/>
@@ -84,7 +88,7 @@
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
 <entry id="8389068" method="true" symbol="draw"/>
-<entry field="true" id="14" symbol="LauncherIcon"/>
+<entry field="true" id="16" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry id="8389123" method="true" symbol="onShow"/>
 <entry id="9" object="true" symbol="OWatchApp"/>
@@ -94,6 +98,7 @@
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="13" symbol="lastDateString"/>
 <entry id="8389347" symbol="color"/>
 <entry id="11" module="true" symbol="Layouts"/>
 <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
@@ -102,21 +107,20 @@
 </symbolTable>
 <localVars>
 <entry arg="true" endPc="268435652" name="dc" stackId="1" startPc="268435609"/>
-<entry arg="true" endPc="268436115" name="dc" stackId="1" startPc="268435674"/>
-<entry endPc="268436114" name="clockTime" stackId="2" startPc="268435678"/>
-<entry endPc="268436114" name="timeString" stackId="3" startPc="268435678"/>
-<entry endPc="268436114" name="view" stackId="4" startPc="268435678"/>
-<entry endPc="268436114" name="dateLabel" stackId="5" startPc="268435678"/>
-<entry endPc="268436114" name="today" stackId="6" startPc="268435678"/>
-<entry endPc="268436114" name="dateString" stackId="7" startPc="268435678"/>
-<entry endPc="268436114" name="sysStats" stackId="8" startPc="268435678"/>
-<entry endPc="268436114" name="batteryLabel" stackId="9" startPc="268435678"/>
-<entry arg="true" endPc="268436296" name="dc" stackId="1" startPc="268436162"/>
-<entry arg="true" endPc="268436780" name="dc" stackId="1" startPc="268436297"/>
-<entry endPc="268436780" name="rez_cmp_local_custom_drawable_HorizontalLines" stackId="2" startPc="268436309"/>
-<entry endPc="268436780" name="rez_cmp_local_text_DateLabel" stackId="3" startPc="268436309"/>
-<entry endPc="268436780" name="rez_cmp_local_text_TimeLabel" stackId="4" startPc="268436309"/>
-<entry endPc="268436780" name="rez_cmp_local_text_BatteryLabel" stackId="5" startPc="268436309"/>
+<entry arg="true" endPc="268436215" name="dc" stackId="1" startPc="268435674"/>
+<entry endPc="268436214" name="dateView" stackId="2" startPc="268435678"/>
+<entry endPc="268436214" name="timeView" stackId="3" startPc="268435678"/>
+<entry endPc="268436214" name="batteryView" stackId="4" startPc="268435678"/>
+<entry endPc="268436214" name="now" stackId="5" startPc="268435678"/>
+<entry endPc="268436214" name="dateTime" stackId="6" startPc="268435678"/>
+<entry endPc="268436214" name="timeString" stackId="7" startPc="268435678"/>
+<entry endPc="268436190" name="sysStats" stackId="8" startPc="268436087"/>
+<entry arg="true" endPc="268436396" name="dc" stackId="1" startPc="268436262"/>
+<entry arg="true" endPc="268436880" name="dc" stackId="1" startPc="268436397"/>
+<entry endPc="268436880" name="rez_cmp_local_custom_drawable_HorizontalLines" stackId="2" startPc="268436409"/>
+<entry endPc="268436880" name="rez_cmp_local_text_DateLabel" stackId="3" startPc="268436409"/>
+<entry endPc="268436880" name="rez_cmp_local_text_TimeLabel" stackId="4" startPc="268436409"/>
+<entry endPc="268436880" name="rez_cmp_local_text_BatteryLabel" stackId="5" startPc="268436409"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -127,13 +131,13 @@
 <dataEntry label="globals/Rez" offset="158" parentId="globals" symbolId="Rez" type="module"/>
 <dataEntry label="globals/OWatchApp" offset="237" parentId="globals" symbolId="OWatchApp" type="class"/>
 <dataEntry label="globals/OWatchView" offset="308" parentId="globals" symbolId="OWatchView" type="class"/>
-<dataEntry label="globals/Rez/Drawables" offset="403" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Layouts" offset="450" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry label="globals/Rez/Menus" offset="489" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry label="globals/Rez/Fonts" offset="520" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="551" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/JsonData" offset="590" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry label="globals/Rez/Drawables/HorizontalLines" offset="621" parentId="Drawables" symbolId="HorizontalLines" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="419" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="466" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="505" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="536" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="567" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="606" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Drawables/HorizontalLines" offset="637" parentId="Drawables" symbolId="HorizontalLines" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435482" name="getApp" startPc="268435457">
@@ -181,7 +185,7 @@
 <functionEntry accessMode="public" name="onHide" parent="OWatchView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436115" name="onUpdate" parent="OWatchView" startPc="268435674">
+<functionEntry accessMode="public" endPc="268436215" name="onUpdate" parent="OWatchView" startPc="268435674">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
@@ -203,17 +207,17 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436134" name="&lt;init&gt;" parent="HorizontalLines" startPc="268436116">
+<functionEntry accessMode="public" endPc="268436234" name="&lt;init&gt;" parent="HorizontalLines" startPc="268436216">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436161" name="initialize" parent="HorizontalLines" startPc="268436135">
+<functionEntry accessMode="public" endPc="268436261" name="initialize" parent="HorizontalLines" startPc="268436235">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436296" name="draw" parent="HorizontalLines" startPc="268436162">
+<functionEntry accessMode="public" endPc="268436396" name="draw" parent="HorizontalLines" startPc="268436262">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436780" name="WatchFace" parent="Layouts" startPc="268436297">
+<functionEntry accessMode="public" endPc="268436880" name="WatchFace" parent="Layouts" startPc="268436397">
 <param id="dc"/>
 <documentation/>
 </functionEntry>

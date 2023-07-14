@@ -14,24 +14,37 @@ import Toybox.Time.Gregorian;
 class OWatchView extends WatchUi.WatchFace{
     [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 8; ]
     <init> {
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 12 10 ]
+        %tmp.1 = 60;
+        %tmp.2 = 60;
+        %tmp.3 = mul %tmp.1 %tmp.2;
+        %tmp.4 = 2;
+        %tmp.5 = mul %tmp.3 %tmp.4;
+        putv self :twoHoursInSeconds %tmp.5;
     }
     [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 8; ]
     static
     <init> {
     }
-    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 10; ]
+    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 10; @position = 8; ]
+    var lastDateString = null;
+    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 11; @position = 8; ]
+    var lastTimeBatteryChecked = 0;
+    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 12; @position = 10; ]
+    const twoHoursInSeconds;
+    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 14; ]
     function initialize() as Void {
-_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_10_26_start:
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 11 8 ]
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_14_26_start:
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 15 8 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_10_26_stop:
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_14_26_stop:
     }
-    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 15; ]
+    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 19; ]
     function onLayout(dc as Dc) as Void {
-_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_15_40_start:
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 16 8 ]
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_19_40_start:
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 20 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -40,150 +53,211 @@ _Users_sno_dev_garmin_OWatch_source_OWatchView_mc_15_40_start:
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_15_40_stop:
-    }
-    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 22; ]
-    function onShow() as Void {
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_19_40_stop:
     }
     [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 26; ]
-    function onUpdate(dc as Dc) as Void {
-_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start:
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 28 8 ]
-        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_stop" ]
-        %clockTime.1 = local;
-        %tmp.1 = getm $.Toybox.System;
-        %tmp.2 = getv function %tmp.1 :getClockTime;
-        %tmp.3 = invoke %tmp.1 %tmp.2();
-        lputv %clockTime.1 %tmp.3;
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 29 8 ]
-        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_stop" ]
-        %timeString.2 = local;
-        %tmp.4 = getm $.Toybox.Lang;
-        %tmp.5 = getv function %tmp.4 :format;
-        %tmp.6 = "$1$:$2$";
-        %tmp.7 = newa 2;
-        %tmp.8 = lgetv %clockTime.1;
-        %tmp.9 = getv %tmp.8 :hour;
-        %tmp.10 = dup %tmp.7;
-        %tmp.11 = aputv %tmp.10 0 %tmp.9;
-        %tmp.12 = lgetv %clockTime.1;
-        %tmp.13 = getv %tmp.12 :min;
-        %tmp.14 = getv function %tmp.13 :format;
-        %tmp.15 = "%02d";
-        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
-        %tmp.17 = dup %tmp.11;
-        %tmp.18 = aputv %tmp.17 1 %tmp.16;
-        %tmp.19 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.18);
-        lputv %timeString.2 %tmp.19;
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 30 8 ]
-        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_stop" ]
-        %view.3 = local;
-        %tmp.21 = getv ? :View;
-        %tmp.22 = getv function %tmp.21 :findDrawableById;
-        %tmp.23 = "TimeLabel";
-        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
-        %tmp.25 = as %tmp.24 Text;
-        lputv %view.3 %tmp.25;
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 31 8 ]
-        %tmp.26 = lgetv %view.3;
-        %tmp.27 = getv function %tmp.26 :setText;
-        %tmp.29 = lgetv %timeString.2;
-        invoke %tmp.26 %tmp.27(%tmp.29);
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 33 8 ]
-        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_stop" ]
-        %dateLabel.4 = local;
-        %tmp.31 = getv ? :View;
-        %tmp.32 = getv function %tmp.31 :findDrawableById;
-        %tmp.33 = "DateLabel";
-        %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
-        %tmp.35 = as %tmp.34 Text;
-        lputv %dateLabel.4 %tmp.35;
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 34 8 ]
-        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_stop" ]
-        %today.5 = local;
-        %tmp.36 = getm $.Toybox.Time.Gregorian;
-        %tmp.37 = getv function %tmp.36 :info;
-        %tmp.38 = getm $.Toybox.Time;
-        %tmp.39 = getv function %tmp.38 :now;
-        %tmp.40 = invoke %tmp.38 %tmp.39();
-        %tmp.41 = getm $.Toybox.Time;
-        %tmp.42 = getv %tmp.41 :FORMAT_SHORT;
-        %tmp.43 = invoke %tmp.36 %tmp.37(%tmp.40, %tmp.42);
-        lputv %today.5 %tmp.43;
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 35 8 ]
-        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_stop" ]
-        %dateString.6 = local;
-        %tmp.44 = getm $.Toybox.Lang;
-        %tmp.45 = getv function %tmp.44 :format;
-        %tmp.46 = "$1$/$2$";
-        %tmp.47 = newa 2;
-        %tmp.48 = lgetv %today.5;
-        %tmp.49 = getv %tmp.48 :month;
-        %tmp.50 = getv function %tmp.49 :format;
-        %tmp.51 = "%02d";
-        %tmp.52 = invoke %tmp.49 %tmp.50(%tmp.51);
-        %tmp.53 = dup %tmp.47;
-        %tmp.54 = aputv %tmp.53 0 %tmp.52;
-        %tmp.55 = lgetv %today.5;
-        %tmp.56 = getv %tmp.55 :day;
-        %tmp.57 = getv function %tmp.56 :format;
-        %tmp.58 = "%02d";
-        %tmp.59 = invoke %tmp.56 %tmp.57(%tmp.58);
-        %tmp.60 = dup %tmp.54;
-        %tmp.61 = aputv %tmp.60 1 %tmp.59;
-        %tmp.62 = invoke %tmp.44 %tmp.45(%tmp.46, %tmp.61);
-        lputv %dateString.6 %tmp.62;
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 42 8 ]
-        %tmp.63 = lgetv %dateLabel.4;
-        %tmp.64 = getv function %tmp.63 :setText;
-        %tmp.66 = lgetv %dateString.6;
-        invoke %tmp.63 %tmp.64(%tmp.66);
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 44 8 ]
-        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_stop" ]
-        %sysStats.7 = local;
-        %tmp.67 = getm $.Toybox.System;
-        %tmp.68 = getv function %tmp.67 :getSystemStats;
-        %tmp.69 = invoke %tmp.67 %tmp.68();
-        lputv %sysStats.7 %tmp.69;
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 46 8 ]
-        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_stop" ]
-        %batteryLabel.8 = local;
-        %tmp.71 = getv ? :View;
-        %tmp.72 = getv function %tmp.71 :findDrawableById;
-        %tmp.73 = "BatteryLabel";
-        %tmp.74 = invoke %tmp.71 %tmp.72(%tmp.73);
-        %tmp.75 = as %tmp.74 Text;
-        lputv %batteryLabel.8 %tmp.75;
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 47 8 ]
-        %tmp.76 = lgetv %batteryLabel.8;
-        %tmp.77 = getv function %tmp.76 :setText;
-        %tmp.78 = getm $.Toybox.Lang;
-        %tmp.79 = getv function %tmp.78 :format;
-        %tmp.80 = "$1$%";
-        %tmp.81 = newa 1;
-        %tmp.82 = lgetv %sysStats.7;
-        %tmp.83 = getv %tmp.82 :battery;
-        %tmp.84 = getv function %tmp.83 :format;
-        %tmp.85 = "%2d";
-        %tmp.86 = invoke %tmp.83 %tmp.84(%tmp.85);
-        %tmp.87 = dup %tmp.81;
-        %tmp.88 = aputv %tmp.87 0 %tmp.86;
-        %tmp.89 = invoke %tmp.78 %tmp.79(%tmp.80, %tmp.88);
-        invoke %tmp.76 %tmp.77(%tmp.89);
-[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 50 8 ]
-        %tmp.91 = getv ? :View;
-        %tmp.92 = getv function %tmp.91 :onUpdate;
-        %tmp.94 = lgetv %dc;
-        invoke %tmp.91 %tmp.92(%tmp.94);
-_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_26_40_stop:
+    function onShow() as Void {
     }
-    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 56; ]
+    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 30; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_start:
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 31 8 ]
+        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_stop" ]
+        %dateView.1 = local;
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :findDrawableById;
+        %tmp.4 = "DateLabel";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = as %tmp.5 Text;
+        lputv %dateView.1 %tmp.6;
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 32 8 ]
+        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_stop" ]
+        %timeView.2 = local;
+        %tmp.8 = getv ? :View;
+        %tmp.9 = getv function %tmp.8 :findDrawableById;
+        %tmp.10 = "TimeLabel";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        %tmp.12 = as %tmp.11 Text;
+        lputv %timeView.2 %tmp.12;
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 33 8 ]
+        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_stop" ]
+        %batteryView.3 = local;
+        %tmp.14 = getv ? :View;
+        %tmp.15 = getv function %tmp.14 :findDrawableById;
+        %tmp.16 = "BatteryLabel";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        %tmp.18 = as %tmp.17 Text;
+        lputv %batteryView.3 %tmp.18;
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 35 8 ]
+        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_stop" ]
+        %now.4 = local;
+        %tmp.19 = getm $.Toybox.Time;
+        %tmp.20 = getv function %tmp.19 :now;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        lputv %now.4 %tmp.21;
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 36 8 ]
+        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_stop" ]
+        %dateTime.5 = local;
+        %tmp.22 = getm $.Toybox.Time.Gregorian;
+        %tmp.23 = getv function %tmp.22 :info;
+        %tmp.25 = lgetv %now.4;
+        %tmp.26 = getm $.Toybox.Time;
+        %tmp.27 = getv %tmp.26 :FORMAT_SHORT;
+        %tmp.28 = invoke %tmp.22 %tmp.23(%tmp.25, %tmp.27);
+        lputv %dateTime.5 %tmp.28;
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 39 8 ]
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_8_if_stmt:
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_11_begin:
+        %tmp.30 = getv ? :lastDateString;
+        %tmp.31 = null;
+        %tmp.32 = eq %tmp.30 %tmp.31;
+        %tmp.33 = dup %tmp.32;
+        bt %tmp.33 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_37_end;
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_37_false:
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_38_begin:
+        %tmp.34 = lgetv %dateTime.5;
+        %tmp.35 = getv %tmp.34 :hour;
+        %tmp.36 = 0;
+        %tmp.37 = eq %tmp.35 %tmp.36;
+        %tmp.38 = dup %tmp.37;
+        bf %tmp.38 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_60_end;
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_60_true:
+        %tmp.39 = lgetv %dateTime.5;
+        %tmp.40 = getv %tmp.39 :min;
+        %tmp.41 = 0;
+        %tmp.42 = eq %tmp.40 %tmp.41;
+        %tmp.43 = and %tmp.37 %tmp.42;
+        push %tmp.43;
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_60_end:
+        %tmp.44 = phi [%tmp.38 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_38_begin] [%tmp.43 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_60_true] [%tmp.44 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_60_end];
+        %tmp.45 = or %tmp.32 %tmp.44;
+        push %tmp.45;
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_37_end:
+        %tmp.46 = phi [%tmp.33 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_11_begin] [%tmp.45 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_37_false] [%tmp.46 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_37_end];
+        bf %tmp.46 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_8_if_end;
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_8_if_true:
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_79_start:
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 40 12 ]
+        %tmp.47 = getm $.Toybox.System;
+        %tmp.48 = getv function %tmp.47 :println;
+        %tmp.49 = "Updating date because it was either never set or it's midnight...";
+        invoke %tmp.47 %tmp.48(%tmp.49);
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 41 12 ]
+        %tmp.50 = getm $.Toybox.Lang;
+        %tmp.51 = getv function %tmp.50 :format;
+        %tmp.52 = "$1$/$2$";
+        %tmp.53 = newa 2;
+        %tmp.54 = lgetv %dateTime.5;
+        %tmp.55 = getv %tmp.54 :month;
+        %tmp.56 = getv function %tmp.55 :format;
+        %tmp.57 = "%02d";
+        %tmp.58 = invoke %tmp.55 %tmp.56(%tmp.57);
+        %tmp.59 = dup %tmp.53;
+        %tmp.60 = aputv %tmp.59 0 %tmp.58;
+        %tmp.61 = lgetv %dateTime.5;
+        %tmp.62 = getv %tmp.61 :day;
+        %tmp.63 = getv function %tmp.62 :format;
+        %tmp.64 = "%02d";
+        %tmp.65 = invoke %tmp.62 %tmp.63(%tmp.64);
+        %tmp.66 = dup %tmp.60;
+        %tmp.67 = aputv %tmp.66 1 %tmp.65;
+        %tmp.68 = invoke %tmp.50 %tmp.51(%tmp.52, %tmp.67);
+        putv self :lastDateString %tmp.68;
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 48 12 ]
+        %tmp.69 = lgetv %dateView.1;
+        %tmp.70 = getv function %tmp.69 :setText;
+        %tmp.72 = getv ? :lastDateString;
+        invoke %tmp.69 %tmp.70(%tmp.72);
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_79_stop:
+        goto @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_8_if_end;
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_39_8_if_end:
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 52 8 ]
+        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_stop" ]
+        %timeString.6 = local;
+        %tmp.73 = getm $.Toybox.Lang;
+        %tmp.74 = getv function %tmp.73 :format;
+        %tmp.75 = "$1$:$2$";
+        %tmp.76 = newa 2;
+        %tmp.77 = lgetv %dateTime.5;
+        %tmp.78 = getv %tmp.77 :hour;
+        %tmp.79 = dup %tmp.76;
+        %tmp.80 = aputv %tmp.79 0 %tmp.78;
+        %tmp.81 = lgetv %dateTime.5;
+        %tmp.82 = getv %tmp.81 :min;
+        %tmp.83 = getv function %tmp.82 :format;
+        %tmp.84 = "%02d";
+        %tmp.85 = invoke %tmp.82 %tmp.83(%tmp.84);
+        %tmp.86 = dup %tmp.80;
+        %tmp.87 = aputv %tmp.86 1 %tmp.85;
+        %tmp.88 = invoke %tmp.73 %tmp.74(%tmp.75, %tmp.87);
+        lputv %timeString.6 %tmp.88;
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 53 8 ]
+        %tmp.89 = lgetv %timeView.2;
+        %tmp.90 = getv function %tmp.89 :setText;
+        %tmp.92 = lgetv %timeString.6;
+        invoke %tmp.89 %tmp.90(%tmp.92);
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 57 8 ]
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_57_8_if_stmt:
+        %tmp.93 = lgetv %now.4;
+        %tmp.94 = getv function %tmp.93 :value;
+        %tmp.95 = invoke %tmp.93 %tmp.94();
+        %tmp.97 = getv ? :lastTimeBatteryChecked;
+        %tmp.98 = sub %tmp.95 %tmp.97;
+        %tmp.100 = getv ? :twoHoursInSeconds;
+        %tmp.101 = gt %tmp.98 %tmp.100;
+        bf %tmp.101 @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_57_8_if_end;
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_57_8_if_true:
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_57_70_start:
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 58 12 ]
+        %tmp.102 = getm $.Toybox.System;
+        %tmp.103 = getv function %tmp.102 :println;
+        %tmp.104 = "Updating battery becuase it was either never set or two hours has passed...";
+        invoke %tmp.102 %tmp.103(%tmp.104);
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 59 12 ]
+        [ "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_57_70_start" "_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_57_70_stop" ]
+        %sysStats.7 = local;
+        %tmp.105 = getm $.Toybox.System;
+        %tmp.106 = getv function %tmp.105 :getSystemStats;
+        %tmp.107 = invoke %tmp.105 %tmp.106();
+        lputv %sysStats.7 %tmp.107;
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 60 12 ]
+        %tmp.108 = lgetv %batteryView.3;
+        %tmp.109 = getv function %tmp.108 :setText;
+        %tmp.110 = getm $.Toybox.Lang;
+        %tmp.111 = getv function %tmp.110 :format;
+        %tmp.112 = "$1$%";
+        %tmp.113 = newa 1;
+        %tmp.114 = lgetv %sysStats.7;
+        %tmp.115 = getv %tmp.114 :battery;
+        %tmp.116 = getv function %tmp.115 :format;
+        %tmp.117 = "%2d";
+        %tmp.118 = invoke %tmp.115 %tmp.116(%tmp.117);
+        %tmp.119 = dup %tmp.113;
+        %tmp.120 = aputv %tmp.119 0 %tmp.118;
+        %tmp.121 = invoke %tmp.110 %tmp.111(%tmp.112, %tmp.120);
+        invoke %tmp.108 %tmp.109(%tmp.121);
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 61 12 ]
+        %tmp.122 = lgetv %now.4;
+        %tmp.123 = getv function %tmp.122 :value;
+        %tmp.124 = invoke %tmp.122 %tmp.123();
+        putv self :lastTimeBatteryChecked %tmp.124;
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_57_70_stop:
+        goto @_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_57_8_if_end;
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_57_8_if_end:
+[ "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc" 65 8 ]
+        %tmp.126 = getv ? :View;
+        %tmp.127 = getv function %tmp.126 :onUpdate;
+        %tmp.129 = lgetv %dc;
+        invoke %tmp.126 %tmp.127(%tmp.129);
+_Users_sno_dev_garmin_OWatch_source_OWatchView_mc_30_40_stop:
+    }
+    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 71; ]
     function onHide() as Void {
     }
-    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 60; ]
+    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 75; ]
     function onExitSleep() as Void {
     }
-    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 64; ]
+    [ @file = "/Users/sno/dev/garmin/OWatch/source/OWatchView.mc"; @line = 79; ]
     function onEnterSleep() as Void {
     }
 }

@@ -1,4 +1,4 @@
-    import Toybox.Graphics;
+import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
@@ -6,6 +6,10 @@ import Toybox.Time;
 import Toybox.Time.Gregorian;
 
 class OWatchView extends WatchUi.WatchFace {
+
+    var lastDateString = null;
+    var lastTimeBatteryChecked = 0;
+    const twoHoursInSeconds = 60 * 60 * 2;
 
     function initialize() {
         WatchFace.initialize();
@@ -24,27 +28,38 @@ class OWatchView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        // Get and show the current time
-        var clockTime = System.getClockTime();
-        var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-        var view = View.findDrawableById("TimeLabel") as Text;
-        view.setText(timeString);
+        var dateView = View.findDrawableById("DateLabel") as Text;
+        var timeView = View.findDrawableById("TimeLabel") as Text;
+        var batteryView = View.findDrawableById("BatteryLabel") as Text;
 
-        var dateLabel = View.findDrawableById("DateLabel") as Text;
-        var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-        var dateString = Lang.format(
-            "$1$/$2$",
-            [
-                today.month.format("%02d"),
-                today.day.format("%02d")
-            ]
-        );
-        dateLabel.setText(dateString);
+        var now = Time.now();
+        var dateTime = Gregorian.info(now, Time.FORMAT_SHORT);
 
-        var sysStats = System.getSystemStats();
+        // Update date only if it hasn't been set or only on midnight
+        if(lastDateString == null || (dateTime.hour == 0 && dateTime.min == 0)){
+            // System.println("Updating date because it was either never set or it's midnight...");
+            lastDateString = Lang.format(
+                "$1$/$2$",
+                [
+                    dateTime.month.format("%02d"),
+                    dateTime.day.format("%02d")
+                ]
+            );
+            dateView.setText(lastDateString);
+        }
 
-        var batteryLabel = View.findDrawableById("BatteryLabel") as Text;
-        batteryLabel.setText(Lang.format( "$1$%", [sysStats.battery.format( "%2d" )]));
+        // Update time every minute as onUpdate runs.
+        var timeString = Lang.format("$1$:$2$", [dateTime.hour, dateTime.min.format("%02d")]);
+        timeView.setText(timeString);
+
+
+        // Update battery every two hours.
+        if((now.value() - lastTimeBatteryChecked) > twoHoursInSeconds){
+            // System.println("Updating battery becuase it was either never set or two hours has passed...");
+            var sysStats = System.getSystemStats();
+            batteryView.setText(Lang.format( "$1$%", [sysStats.battery.format( "%2d" )]));
+            lastTimeBatteryChecked = now.value();
+        }
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
